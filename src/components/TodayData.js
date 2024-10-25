@@ -9,7 +9,7 @@ import CompressIcon from '@mui/icons-material/Compress';
 import DeviceThermostatIcon from '@mui/icons-material/DeviceThermostat';
 
 const TodayData = ({ weatherData, airQualityData }) => {
-  const { main, wind, visibility, sys } = weatherData;
+  const { main, visibility, sys } = weatherData;
   const airQualityIndex = airQualityData?.main?.aqi; // Accessing aqi from airQualityData.main
   const { co, no, no2, o3 } = airQualityData?.components || {};
   

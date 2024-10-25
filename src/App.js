@@ -5,7 +5,7 @@ import WeatherCard from "../src/components/WeatherCard";
 import axios from "axios";
 import TodayData from "./components/TodayData";
 import FiveDayForecast from "./components/Fiveday";
-import { grey } from "@mui/material/colors";
+
 
 function App() {
   const [weatherData, setWeatherData] = useState(null);
@@ -13,9 +13,8 @@ function App() {
   const [airQualityData, setAirQualityData] = useState(null);
   const [fiveDayForecast, setFiveDayForecast] = useState(null);
 
-  useEffect(() => {
-    WeatherData(city);
-  }, [city]);
+
+  
   const AirQualityData = (lat, lon) => {
     const API_KEY = "1f5a2fa85d07783032272b2c7e91acef"; // Replace with your OpenWeatherMap API key
     axios
@@ -50,6 +49,10 @@ function App() {
         console.error("Error fetching the weather data:", error)
       );
   };
+
+  useEffect(() => {
+    WeatherData(city);
+  }, [city]); 
 
   const handleSearch = (searchedCity) => {
     setCity(searchedCity);
