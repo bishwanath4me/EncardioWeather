@@ -462,7 +462,7 @@ margin-left: 10px;
 
   .fiveDay {
     margin-bottom: 20px; 
-    flex-direction: column; 
+    /* flex-direction: column;  */
     align-items: flex-start;
   }
 }
