@@ -29,7 +29,7 @@ function App() {
       );
   };
 
-  const WeatherData = async () => {
+  const WeatherDatas = async () => {
     const API_KEY = "1f5a2fa85d07783032272b2c7e91acef";
    await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`)
       .then((response) => response.json())
@@ -51,7 +51,7 @@ function App() {
   };
 
   useEffect(() => {
-    WeatherData(city);
+    WeatherDatas(city);
   }, [city]); 
 
   const handleSearch = (searchedCity) => {
