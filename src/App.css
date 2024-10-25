@@ -464,6 +464,7 @@ margin-left: 10px;
     margin-bottom: 20px; 
     /* flex-direction: column;  */
     align-items: flex-start;
+    
   }
 }
 
@@ -475,8 +476,9 @@ margin-left: 10px;
 
   .fiveDay {
     margin-bottom: 15px; 
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: flex-start;
+  
   }
 }
 
